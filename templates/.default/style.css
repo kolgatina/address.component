@@ -1,0 +1,433 @@
+.address-line {
+    font-family: Helvetica Neue, Helvetica;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    z-index: 4;
+    background-color: #fff;
+    padding-top: 23px;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.address-line-comment {
+    padding-bottom: 9px;
+    font-size: 13px;
+}
+
+.address-line-form {
+    position: relative;
+    display: inline-block;
+    width: 940px;
+    height: 54px;
+    border-radius: 5px;
+    background-color: #ea5c01;
+}
+
+.delivery-content {
+    display: inline-block;
+    margin: 6px;
+}
+
+.delivery-content input {
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    height: 42px;
+    padding-left: 15px;
+    padding-top: 0;
+    font-size: 17px;
+}
+
+.delivery-content form .address-line-street {
+    position: relative;
+    width: 510px;
+}
+
+.street-with-prompt  {
+    padding-top: 9px !important;
+}
+
+.street-delete {
+    display: none;
+    height: 18px;
+    width: 18px;
+    background: url(../delete.svg) no-repeat left center;
+    position: absolute;
+    left: 486px;
+    top: 18px;;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.address-line-prompt {
+    position: absolute;
+    top: 7px;
+    left: 21px;
+    font-size: 11px;
+    color: gray;
+    width: 465px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.address-line .search-results-list {
+    left: 24px;
+    top: 40px;
+}
+
+.delivery-content form .address-line-house  {
+    width: 140px;
+    margin-left: 6px;
+}
+
+.address-line .search-results-list-house {
+    left: 540px;
+    top: 40px;
+}
+
+.pickup-content {
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+}
+
+.pickup-content-text {
+    position: absolute;
+    top: 16px;
+    left: 673px;
+    width: 251px;
+    height: 20px;
+}
+
+.pickup-content a:before {
+    content: "";
+    border-bottom: #fff dotted 2px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+}
+
+.pickup-content a,
+.pickup-content a:hover {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.address-line-info {
+    display: none;
+}
+
+.roll-down-address-line-info {
+    font-size: 13px;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: 9px;
+    margin-left: 6px;
+    display: inline-block;
+}
+
+.roll-down-address-line-info a:before {
+    content: "";
+    border-bottom: #eb5a00 dotted 1px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+}
+
+.roll-down-address-line-info a,
+.roll-down-address-line-info a:hover,
+.roll-down-address-line-info a:visited {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.my-street-container,
+.address-ok,
+.address-stopped,
+.address-my-street,
+.address-multiple,
+.address-nope {
+    display: none;
+}
+
+.address-ok-block {
+    max-width: 225px;
+    margin-right: 25px;
+    margin-bottom: 6px;
+    padding-left: 25px;
+    float: left;
+    min-height: 18px;
+}
+
+.address-ok-block.free-zone,
+.address-ok-block.pay-zone {
+    display: none;
+}
+
+.pay-zone-message {
+    position: relative;
+}
+
+.pay-zone-message p {
+    display: inline;
+}
+
+.address-line-price {
+    background: url(../price.svg) no-repeat left top;
+}
+
+.address-line-time {
+    background: url(../time.svg) no-repeat left top;
+}
+
+.address-line-cuisine {
+    background: url(../cuisine.svg) no-repeat left top;
+}
+
+.price,
+.pay-zone-price,
+.total-zone-price,
+.time,
+.address-stopped,
+.delivery-price {
+    display: inline;
+}
+
+.address-problem-block {
+    padding-left: 25px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    float: left;
+    min-height: 18px;
+}
+
+.address-line-no-delivery {
+    background: url(../no-delivery.svg) no-repeat left top;
+}
+
+.address-line-unknown-address {
+    background: url(../unknown-address.svg) no-repeat left top;
+}
+
+.roll-up-address-line-info {
+    position: relative;
+    display: inline-block;
+    color: #eb5a00;
+    font-size: 13px;
+    text-align: left;
+    margin: 9px 0 6px 6px;
+    cursor: pointer;
+}
+
+.roll-up-address-line-info:before {
+    content: "";
+    border-bottom: #eb5a00 dotted 2px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+}
+
+#address-line-pickup {
+    font-size: 17px;
+    text-align: left;
+    max-width: 940px;
+    margin-bottom: 6px;
+}
+
+#address-line-pickup a:before {
+    content: "";
+    border-bottom: #ea5c01 dotted 2px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+}
+
+#address-line-pickup a,
+#address-line-pickup a:hover {
+    position: relative;
+    text-decoration: none;
+    color: #ea5c01;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.selected-store-name, .selected-store-address {
+    display: inline-block;
+}
+
+.edit-pickup-icon {
+    background: url(../edit.svg) no-repeat left top;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.address-line-back-to-top {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .address-line {
+        padding-top: 17px;
+    }
+
+    .address-line-form {
+        width: 720px;
+    }
+
+    .delivery-content form .address-line-street {
+        width: 293px;
+    }
+
+    .address-line-prompt {
+        width: 248px;
+    }
+
+    .street-delete {
+        left: 269px;
+    }
+
+    .address-line .search-results-list-house {
+        left: 323px;
+    }
+
+    .pickup-content-text {
+        left: 452px;
+    }
+
+    .address-ok-block {
+        max-width: 412px;
+        float: none;
+        min-height: 18px;
+        margin-bottom: 9px;
+    }
+
+    #address-line-pickup {
+        max-width: 730px;
+    }
+}
+
+@media (max-width: 767px) {
+    .address-line-comment {
+        padding: 0;
+        padding-bottom: 9px;
+    }
+
+    .address-line-form {
+        width: 450px;
+        height: 90px;
+    }
+
+    .delivery-content {
+        margin-right: 0;
+    }
+
+    .pickup-content-text {
+        top: 56px;
+        left: 99px;
+    }
+
+    .roll-down-address-line-info {
+        margin-top: 14px;
+        margin-left: 7px;
+    }
+
+    .roll-up-address-line-info {
+        margin: 13px 0 6px 6px;
+    }
+
+    #address-line-pickup {
+        max-width: 460px;
+    }
+
+    .address-problem-block {
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 500px) {
+    .address-line {
+        padding-top: 9px;
+    }
+
+    .address-line-comment {
+        width: 286px;
+    }
+
+    .address-line-form {
+        width: 100%;
+        height: 147px;
+        padding-right: 6px;
+        margin: 0;
+    }
+
+    .address-line-prompt {
+        width: 85%;
+    }
+
+    .delivery-content form .address-line-street {
+        width: 100%;
+    }
+
+    .street-delete {
+        top: 19px;
+        left: calc(100% - 35px);
+    }
+
+    .delivery-content form .address-line-house {
+        width: 100%;
+        margin: 0;
+        margin-top: 6px;
+    }
+
+    .address-line .search-results-list-house {
+        left: 24px;
+        top: 90px;
+    }
+
+    .pickup-content {
+        width: 100%;
+    }
+
+    .pickup-content-text {
+        position: static;
+        display: block;
+        padding-top: 6px;
+        margin-right: auto;
+        margin-left: auto;
+        white-space: nowrap;
+    }
+
+    .address-ok-block {
+        width: 95%;
+        height: auto;
+    }
+
+    .address-problem-block {
+        width: 95%;
+    }
+
+    #address-line-pickup {
+        width: 95%;
+    }
+}
